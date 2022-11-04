@@ -1,99 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 .nav-bar {
     background: #181818;
-    width: 60px;
-    height: 100%;
-    position: absolute;
+    height: 60px;
+    width: 100%;
+    position: sticky;
     top: 0;
     z-index: 3;
-    min-height: 500px;
 
+
+    //Main Logo
     .logo{
-        display: block;
+        display: inline;
         padding: 8px 0;
         
         img{
             display: block;
-            margin: 8px auto;
+            flex: none;
+            float: left;
+            margin: 16px;
             width: 24px;
             height: auto;
-
-            &.sub-logo{
-                width: 50px;
-            }
-        }
-    }
-
-nav {
-    display: block;
-    text-align: center;
-    position: absolute;
-    height: 210px;
-    top: 50%;
-    margin-top: -120px;
-    width: 100%;
-
-    a {
-        font-size: 22px;
-        color: #4d4d4e;
-        display: block;
-        line-height: 51px;
-        height: 51px;
-        position: relative;
-        text-decoration: none;
-
-        i{
-            transition: all 0.3s ease-out;
-        }
-
-        &:hover {
-            color: #900;
-
-            svg{
-                opacity: 0;
-            }
-
-            &:after {
-                opacity: 1;
-
-            }
-        }
-
-        &:after {
-            content: '';
-            font-size: 9px;
-            letter-spacing: 2px;
             position: absolute;
-            bottom: 0;
+        }
+        .navText{
+            font-size: 12px;
             display: block;
-            width: 100%;
-            text-align: center;
-            opacity: 0;
-            transition: all 0.3s ease-out;
-
+            letter-spacing: 1px;
+            color: #FFFFFF;
+            flex: none;
+            text-decoration: none;
+            font-family: 'EB Garamond', serif;
+            float: left;
+            margin: 24px;
+            margin-left: 44px;
+            width: 200px;
+            height: auto;
+            position: absolute;
         }
-
-        &:first-child {
-            &::after{
-                content: 'HOME';
-            }
-        }
-
-    }
-    a.about-link{
-        &:after{
-            content: 'ABOUT';
-        }
-    }
-    a.contact-link{
-        &:after{
-            content: 'CONTACT';
-        }
+        
     }
 
-    a.active {
-        svg{
-            color: #900;
+    //Texas Tech Mainpage link
+    #subLogo{
+            font-size: 7px;
+            letter-spacing: 1px;
+            position: relative;
+            font-family: 'EB Garamond', serif;
+            text-decoration: none;
+            color: white;
+            display: inline;
+            width: 24px;
+            margin-left: 8px;           
         }
+
+    .userIcon{
+        font-size: 22px;
+        margin: 15px;
+        float: right;
     }
-}
+    .navOpt{
+        font-weight: bold;
+        letter-spacing: .4px;
+        font-size: 8px;
+        margin-top: 24px;
+        margin-left: 24px;
+        font-family: 'Open Sans', sans-serif;
+        text-decoration: none;
+        float: right;
+        color: #4d4d4e;
+    }
+        
+    .researchButton{
+        font-weight: bold;
+        letter-spacing: .4px;
+        font-size: 8px;
+        margin-top: 24px;
+        margin-left: 24px;
+        font-family: 'Open Sans', sans-serif;
+        text-decoration: none;
+        float: right;
+        color: #4d4d4e;
+    }
+
 }
